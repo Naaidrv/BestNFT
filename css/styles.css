@@ -9,7 +9,7 @@
 }
 
 :root{
-    --main-color:#fff;
+    --main-color:#2871fa;
     --text-color:#fff;
     --bg-color:#1e1c2a;
     --lineal:linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
@@ -25,6 +25,7 @@
 
 body{
     color: var(--text-color);
+    background-color:#1e1c2a;;
     background: url(/assets/back2.png);
     box-sizing: border-box;
    border: none;
@@ -51,7 +52,7 @@ header{
 }
 
 .logo{
-    color: var(--main-color);
+    color: var(--text-color);
     font-weight: 600;
     font-size: 2.4rem;
 }
@@ -69,7 +70,7 @@ header{
 }
 
 .navbar a:hover{
-    color: red;
+    color: rgb(186, 22, 183);
 }
 
 #menu-icon{
@@ -100,7 +101,7 @@ section{
 
 .home-text h1{
     font-size: var(--big-font);
-    color: var(--main-color);
+    color: var(--text-color);
 }
 
 .home-text p{
@@ -286,6 +287,11 @@ h2{
 
 .creator-card i{
     font-size: 1.2rem;
+    transition: .4s ease;
+    color: rgb(186, 22, 183);
+}
+
+.creator-card i:hover{
     color: var(--main-color);
 }
 
@@ -317,7 +323,7 @@ h2{
 
 .s-card h3{
     margin: 4px 0 10px;
-    color: var(--main-color);
+    color: rgb(186, 22, 183);
     font-size: 1.2rem;
 }
 
@@ -427,7 +433,7 @@ h2{
 
     .card-container{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(145px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
         grid-gap: 2rem;
         align-items: center;
     }
@@ -439,9 +445,13 @@ h2{
         display: flex;
         flex-direction: column;
         background: #26498a89;
-        padding: 20px;
+        padding: 10px;
         border-radius: 0.5rem;
         justify-content: center;
         align-items: center;
+    }
+
+    .card-img{
+        width: 100%;
     }
 }
