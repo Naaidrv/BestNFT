@@ -411,8 +411,18 @@ h2{
         order: 2;
     }
 
+    .collections .head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head input{
+        margin-top: 10%;
+        width: 100%;
+    }
+
     section{
-        padding: 100px 7%;
+        padding: 80px 7%;
     }
 
     .card-container{
