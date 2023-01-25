@@ -9,7 +9,7 @@
 }
 
 :root{
-    --main-color:#2871fa;
+    --main-color:#fa28ef;
     --text-color:#fff;
     --bg-color:#1e1c2a;
     --lineal:linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%) 1;
@@ -142,7 +142,16 @@ section{
 }
 
 .about{
+    min-height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text p{
+    text-transform: none;
 }
 
 .about-text span{
@@ -294,7 +303,7 @@ h2{
 }
 
 .creator-card i{
-    font-size: 1.2rem;
+    font-size: 2rem;
     transition: .4s ease;
     color: rgb(186, 22, 183);
 }
